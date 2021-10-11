@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Exercise {
 
-    //Задание 1 про города (Затратил 10 минут)
+     //Р—Р°РґР°РЅРёРµ 1 РїСЂРѕ РіРѕСЂРѕРґР° (Р—Р°С‚СЂР°С‚РёР» 10 РјРёРЅСѓС‚)
     public static String cities(String[] towns){
         String result = "";
         for(int i = 0; i < towns.length; i++){
@@ -13,7 +13,7 @@ public class Exercise {
     }
 
 
-    //Задание 2 про округление (Затратил 20 минут)
+    //Р—Р°РґР°РЅРёРµ 2 РїСЂРѕ РѕРєСЂСѓРіР»РµРЅРёРµ (Р—Р°С‚СЂР°С‚РёР» 20 РјРёРЅСѓС‚)
     public static int rounding(float number){
         float remains = number%5;
         System.out.println(remains);
@@ -24,37 +24,37 @@ public class Exercise {
             return  (int) (number/5)* 5;
     }
 
-    //Задание 3 про падежы (Затратил 30 минут)
+    //Р—Р°РґР°РЅРёРµ 3 РїСЂРѕ РїР°РґРµР¶С‹ (Р—Р°С‚СЂР°С‚РёР» 30 РјРёРЅСѓС‚)
     public static String countPk(int pk) {
         int remains = pk % 10;
         switch (remains) {
             case (1):
-                return pk + " компьютер";
+                return pk + " ГЄГ®Г¬ГЇГјГѕГІГҐГ°";
             case (2):
             case (3):
             case (4):
-                return pk + " компьютера";
+                return pk + " ГЄГ®Г¬ГЇГјГѕГІГҐГ°Г ";
             case (5):
             case (6):
             case (7):
             case (8):
             case (9):
             case (0):
-                return pk + " компьютеров";
+                return pk + " ГЄГ®Г¬ГЇГјГѕГІГҐГ°Г®Гў";
         }
         return null;
     }
 
-    //Задание 4 про простые числа (Затратил 10 минут)
+    //Р—Р°РґР°РЅРёРµ 4 РїСЂРѕ РїСЂРѕСЃС‚С‹Рµ С‡РёСЃР»Р° (Р—Р°С‚СЂР°С‚РёР» 10 РјРёРЅСѓС‚)
     public static String primeNumber(int number){
         for(int i = 2; i < number; i++){
             if(number%i == 0)
-                return "Не простое число";
+                return "ГЌГҐ ГЇГ°Г®Г±ГІГ®ГҐ Г·ГЁГ±Г«Г®";
         }
-        return "Простое число";
+        return "ГЏГ°Г®Г±ГІГ®ГҐ Г·ГЁГ±Г«Г®";
     }
 
-    //Задание 5 про обьденение массивов (Затратил 40 минут)
+    //Р—Р°РґР°РЅРёРµ 5 РїСЂРѕ РѕР±СЊРґРµРЅРµРЅРёРµ РјР°СЃСЃРёРІРѕРІ (Р—Р°С‚СЂР°С‚РёР» 40 РјРёРЅСѓС‚)
     public static List<Integer> searchNumbers(int[] args1, int [] args2){
         List<Integer> list = new ArrayList<>();
         Map<Integer,Integer> map1 = new HashMap<>();
@@ -89,20 +89,20 @@ public class Exercise {
 
 
     public static void main(String[] args) {
-        //Вывод результатат на консоль к 1 задача
-        String[] arrgs = {"Москва", "Санкт-Петербург", "Воронеж"};
+        //Г‚Г»ГўГ®Г¤ Г°ГҐГ§ГіГ«ГјГІГ ГІГ ГІ Г­Г  ГЄГ®Г­Г±Г®Г«Гј ГЄ 1 Г§Г Г¤Г Г·Г 
+        String[] arrgs = {"ГЊГ®Г±ГЄГўГ ", "Г‘Г Г­ГЄГІ-ГЏГҐГІГҐГ°ГЎГіГ°ГЈ", "Г‚Г®Г°Г®Г­ГҐГ¦"};
         System.out.println(cities(arrgs));
 
-        //Вывод результатат на консоль ко 2 задаче
+        //Г‚Г»ГўГ®Г¤ Г°ГҐГ§ГіГ«ГјГІГ ГІГ ГІ Г­Г  ГЄГ®Г­Г±Г®Г«Гј ГЄГ® 2 Г§Г Г¤Г Г·ГҐ
         System.out.println(rounding(26.6f));
 
-        //Вывод результатат на консоль к 3 задаче
+        //Г‚Г»ГўГ®Г¤ Г°ГҐГ§ГіГ«ГјГІГ ГІГ ГІ Г­Г  ГЄГ®Г­Г±Г®Г«Гј ГЄ 3 Г§Г Г¤Г Г·ГҐ
         System.out.println(countPk(30));
 
-        //Вывод результатат на консоль к 4 задаче
+        //Г‚Г»ГўГ®Г¤ Г°ГҐГ§ГіГ«ГјГІГ ГІГ ГІ Г­Г  ГЄГ®Г­Г±Г®Г«Гј ГЄ 4 Г§Г Г¤Г Г·ГҐ
         System.out.println(primeNumber(11));
 
-        //Вывод результатат на консоль к 5 задаче
+        //Г‚Г»ГўГ®Г¤ Г°ГҐГ§ГіГ«ГјГІГ ГІГ ГІ Г­Г  ГЄГ®Г­Г±Г®Г«Гј ГЄ 5 Г§Г Г¤Г Г·ГҐ
         int [] args1 = {1,3,4,7,8,1,4,4,4};
         int [] args2 = {1,2,2,2,3,3,4,4,1};
         System.out.println(searchNumbers(args1,args2));
